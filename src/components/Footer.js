@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4>About the portifolio</h4>
+          <h4>About the portfolio</h4>
           <p>
             This is made with lots of love and care. In this portfolio I show
             some showcases that I developed and have been creating in my

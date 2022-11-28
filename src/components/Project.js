@@ -23,7 +23,7 @@ const Project = ({title, imgsrc, text, view, source}) => {
         rel="noreferrer"
         target={"_blank"}
         >
-          <FaGithub size={20}/>
+          <FaGithub size={25}/>
           </a>
       </div>
     </div>

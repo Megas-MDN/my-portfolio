@@ -16,7 +16,7 @@ const OnGoingData = [
   },
   {
     id: 2,
-    title: "Portifolio DB",
+    title: "Portfolio DB",
     tech: "React + Data Base",
     tasks: ["Connect", "Write", "Feed", "Fetch"],
     source: "https://github.com/Megas-MDN",
