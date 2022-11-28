@@ -1,0 +1,12 @@
+.contact-me {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-me h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  margin-bottom: 35px;
+}

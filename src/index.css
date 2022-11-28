@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: black;
+}
+
+h1, h2, h3, h4, p, a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-light {
+  background: transparent;
+  color: white;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  transition: 0.3s;
+}
