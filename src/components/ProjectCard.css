@@ -20,6 +20,13 @@
 .project-card {
   background: #1a1919;
   padding: 1.2rem 1rem;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .project-card img {
@@ -32,7 +39,7 @@
 }
 
 .pro-details {
-  height: 270px;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,5 +78,8 @@
     max-width: 90%;
     margin: auto;
     grid-template-columns: 1fr;
+  }
+  .project-card {
+    height: 600px;
   }
 }
