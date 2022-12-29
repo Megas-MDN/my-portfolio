@@ -1,7 +1,7 @@
-import React, { useEffect, useMemo, useState } from "react";
-import useFetchPortifolio from "../hooks/useFetchPortifolio";
-import PortifolioContext from "./PortifolioContext";
-import {urlProjects, urlOnGoing} from '../services/endpoints';
+import React, { useEffect, useMemo, useState } from 'react';
+import useFetchPortifolio from '../hooks/useFetchPortifolio';
+import PortifolioContext from './PortifolioContext';
+import { urlProjects, urlOnGoing } from '../services/endpoints';
 
 function ProtifolioProvider({ children }) {
   const [projectsDB, setProjectsDB] = useState([]);
@@ -16,13 +16,20 @@ function ProtifolioProvider({ children }) {
 
   const data = useMemo(
     () => ({
-      projectsData: projectsDB,
-      onGoingData: onGoingDB,
+      projectsData: projectsDB.projects,
+      onGoingData: onGoingDB.results,
       errors: [projects.error, ongoinig.error],
       projectsLoading: projects.loading,
       ongoingLoading: ongoinig.loading,
     }),
-    [onGoingDB, ongoinig.error, ongoinig.loading, projects.error, projects.loading, projectsDB]
+    [
+      onGoingDB,
+      ongoinig.error,
+      ongoinig.loading,
+      projects.error,
+      projects.loading,
+      projectsDB,
+    ]
   );
 
   return (

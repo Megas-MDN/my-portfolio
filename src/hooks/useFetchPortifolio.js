@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 // import { ProjectsData, OnGoinData } from "../data";
 
 function useFetchPortifolio(endpoint = '') {
@@ -10,10 +10,10 @@ function useFetchPortifolio(endpoint = '') {
     const getData = async () => {
       try {
         // const dataFromDB = { ProjectsData, OnGoinData }; // fake fetch Api
-        const response =  await fetch(endpoint);
+        const response = await fetch(endpoint);
         const data = await response.json();
-        console.log(data)
-        setData(data.results);
+        console.log(data);
+        setData(data);
       } catch (err) {
         setError(err);
         console.error(err);
